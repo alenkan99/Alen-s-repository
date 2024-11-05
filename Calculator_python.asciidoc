@@ -1,0 +1,61 @@
++*In[33]:*+
+[source, ipython3]
+----
+name = input("Enter your name")
+
+weight = int(input("Enter your weight in kilograms: "))
+
+height = float(input("Enter your height in meters (example 1.70): "))
+
+BMI = weight / (height * height) 
+
+print (BMI)
+
+if BMI > 0:
+    if BMI <= 18.5:
+        print (name + ", you are underweight")
+    elif BMI <= 24.9:
+         print (name + ", you are normal weight")
+    elif BMI <= 29.9:
+         print (name + ", you are overweight")
+    elif BMI <= 34.9:
+         print (name + ", you are obese")
+    elif BMI <= 39.9:
+         print (name + ", you are severely obese")
+    else:
+        print(name + ", you are morbidly obese")
+else:
+    print("Enter valid input")
+----
+
+
++*Out[33]:*+
+----
+Enter your name Alen
+Enter your weight in kilograms:  71
+Enter your height in meters (example 1.70):  1.72
+
+23.99945916711736
+Alen, you are normal weight
+----
+
+
++*In[27]:*+
+[source, ipython3]
+----
+
+
+----
+
+
++*Out[27]:*+
+----
+Alen, you are overweight
+----
+
+
++*In[ ]:*+
+[source, ipython3]
+----
+
+----
